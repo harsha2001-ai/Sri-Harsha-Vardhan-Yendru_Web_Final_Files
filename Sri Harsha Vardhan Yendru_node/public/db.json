@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "661eb9714dd24d149baa3a9d",
+    "Name": "KFC",
+    "DeliveryRating": 4,
+    "MethodOfPayment": "Cash",
+    "NumberOfItems": 1,
+    "OrderAmount": "32$",
+    "OrderDate": "2024-04-16T04:00:00.000Z",
+    "RestaurantDish": "Crispy Wings"
+  },
+  {
+    "_id": "661eba574dd24d149baa3a9f",
+    "Name": "Domino's",
+    "DeliveryRating": 1,
+    "MethodofPayment": "Debit",
+    "NumberofItems": 2,
+    "OrderAmount": "50$",
+    "OrderDate": "2024-04-12T04:00:00.000Z",
+    "RestaurantDish": "Chicken Salad,Tacos"
+  },
+  {
+    "_id": "661ebbc94dd24d149baa3aa0",
+    "Name": "DunkinDonuts",
+    "DeliveryRating": 4,
+    "MethodOfPayment": "Cash",
+    "NumberofItems": 2,
+    "OrderAmount": "3$",
+    "OrderDate": "2012-11-04T04:00:00.000Z",
+    "RestaurantDish": "Chocolate Donut"
+  },
+  {
+    "_id": "661ebefc4dd24d149baa3aa1",
+    "Name": "Popeyes",
+    "DeliveryRating": 5,
+    "MethodOfPayment": "Rewards",
+    "NumberOfItems": 1,
+    "OrderAmount": "0$",
+    "OrderDate": "2024-03-22T04:00:00.000Z",
+    "RestaurantDish": "Large Fries"
+  },
+  {
+    "_id": "6620525c3a82dfe220e5c61b",
+    "Name": "Popeyes",
+    "DeliveryRating": 1,
+    "MethodOfPayment": "Cash",
+    "NumberOfItems": 1,
+    "OrderAmount": "10$",
+    "OrderDate": "2024-03-12T04:00:00.000Z",
+    "RestaurantDish": "Fried Wings"
+  },
+  {
+    "_id": "662057e83a82dfe220e5c61c",
+    "Name": "Pizza Hut",
+    "DeliveryRating": 3,
+    "MethodOfPayment": "Debit Card",
+    "NumberOfItems": 1,
+    "OrderAmount": "23$",
+    "OrderDate": "2024-03-01T05:00:00.000Z",
+    "RestaurantDish": "Chicken Pizza"
+  },
+  {
+    "_id": "662060ee3a82dfe220e5c61d",
+    "Name": "Wendys",
+    "DeliveryRating": 5,
+    "MethodOfPayment": "Cash",
+    "NumberOfItems": 2,
+    "OrderAmount": "12$",
+    "OrderDate": "2024-03-01T05:00:00.000Z",
+    "RestaurantDish": "French Fries"
+  },
+  {
+    "_id": "662061993a82dfe220e5c61e",
+    "Name": "Pista House",
+    "DeliveryRating": 5,
+    "MethodOfPayment": "Card",
+    "NumberOfItems": 1,
+    "OrderAmount": "5$",
+    "OrderDate": "2024-09-07T04:00:00.000Z",
+    "RestaurantDish": "Tandoori Chicken"
+  }
+]

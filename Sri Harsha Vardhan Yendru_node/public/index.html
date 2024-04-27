@@ -1,0 +1,451 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+    <style>
+        body{
+    background-color:rgb(129, 98, 90) ;
+}
+:root{
+
+    --main-radius: 5px;
+    --main-padding:5px;
+    --blue: #1e90ff;
+    --white: #ffffff; 
+    --yellowish: #F7C600;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+    "nav nav nav nav"
+    "sidebar1 header header header"
+    "sidebar2 content1 content2 content3"
+    "sidebar3 content4 content5 content6"
+    "sidebar4 content7 content8 content9"
+    "sidebar5 content10 content10 content10"
+    "sidebar6 footer footer footer";
+    grid-gap:0.8rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: 800;
+    font-size: 1EM;
+    color: #fff;  
+}
+
+nav {
+    background: aqua;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding: 4px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    align-items: center; /
+}
+
+nav a {
+    text-decoration: none;
+    padding: 9px 16px;
+    font-size: large;
+}
+
+#sidebar1{
+    background:rgb(22, 143, 213);
+    grid-area: sidebar1;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+    color:black;
+    align-items: center;
+}
+
+header{
+    background:#c5dd4d ;
+    grid-area: header;
+    color: black;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+header p{
+    font-size:larger;
+    color: #cb552d;
+    text-align:left;
+}
+header h2{
+    text-decoration:underline;
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+#sidebar2 {
+    grid-area: sidebar2;
+    background: #c5dd4d;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content1{
+    grid-area: content1;
+    background: #f7a164;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content1 p{
+    color:black;
+    text-align: center;
+}
+#content2{
+    grid-area: content2;
+    background: #f7a164;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content2 p{
+    color:black;
+    text-align: center;
+}
+#content3{
+    grid-area: content3;
+    background: #f7a164;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content3 p{
+    color:black;
+    text-align: center;
+}
+#sidebar3 {
+    grid-area: sidebar3;
+    background: #f7a164;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content4 {
+    grid-area:content4 ;
+    background: #05e2ff;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content4 p{
+    text-align: center;
+    color: black;
+}
+#content5 {
+    grid-area:content5 ;
+    background: #05e2ff;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content5 p{
+    text-align: center;
+    color: black;
+}
+#content6 {
+    grid-area:content6 ;
+    background: #05e2ff;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content6 p{
+    text-align: center;
+    color: black;
+}
+#sidebar4 {
+    grid-area: sidebar4;
+    background: #05e2ff;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content7 {
+    grid-area:content7 ;
+    background: #43c477;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content7 p{
+    text-align: center;
+    color: black;
+}
+#content7 ul{
+    color: brown;
+}
+#content8 {
+    grid-area:content8 ;
+    background: #43c477;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content8 p{
+    text-align: center;
+    color: black;
+}
+#content8 ul{
+    color: brown;
+}
+
+#content9 {
+    grid-area:content9 ;
+    background: #43c477;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#content9 p{
+    text-align: center;
+    color: black;
+}
+#content9 ul{
+    color: brown;
+}
+#sidebar5 {
+    grid-area: sidebar5;
+    background: #5adb9a;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#content10{
+    background: #d4626d;
+    grid-area: content10;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#sidebar6 {
+    grid-area: sidebar6;
+    background: #d4618f;
+    color: black;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+footer{
+    grid-area: footer;
+    background: #cb552d;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+footer img {
+    width: 60px; 
+    height: auto; 
+    margin: 20px;; 
+    
+}
+
+@media only screen and (max-width: 500px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr
+                    1.2fr 1.2fr 1.2fr 1.2fr;
+                    justify-content: space-evenly;
+
+        grid-template-areas:
+        "nav"
+        "header"
+        
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6"
+        "content7"
+        "content8"
+        "content9"
+        "content10"
+        "footer";
+
+        row-gap: 0.5rem ;
+    }
+    #sidebar1{
+        display: none;
+    }
+    #sidebar2{
+        display: none;
+    }
+    #sidebar3{
+        display: none;
+    }
+    #sidebar4{
+        display: none;
+    }
+    #sidebar5{
+        display: none;
+    }
+    #sidebar6{
+        display: none;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="#about">About</a>
+        <a href="#sidebar2">Education</a>
+        <a href="#sidebar3">Experience</a>
+        <a href="#sidebar4">Projects</a>
+        <a href="#sidebar5">Blogs</a>
+        <a href="#sidebar6">Contact</a>
+    </nav>
+    
+    <div id="sidebar1">
+        <img src='https://static1.bigstockphoto.com/1/6/7/large1500/76145516.jpg' alt="Profile" width="150px">
+        <p><b>Name : </b>Sri Harsha Vardhan Yendru</p>
+        <p><b>Email: </b>harshayendru2001@gmail.com</p>
+        
+    </div>
+    <header id="about">
+        <h2>About</h2>
+        <p>I am Sri Harsha Vardhan Yendru, currently pursuing a Master's degree 
+            in Computer Science at the University of New Haven.
+            With experience as a Product Engineer at Maybank in Bangalore, India,
+            and a Bachelor's degree from Presidency University in  Computer Science and Engineering, I am passionate about 
+            leveraging technology to drive innovative solutions and contribute effectively to the field of computer science.</p>
+    </header>
+    <div id="sidebar2">
+        <h2>Education</h2>
+    </div>
+    <div id="content1">
+        <b >Masters</b>
+                <p><b>University : </b> University of New Haven</p>
+                <p><b>Major : </b> Computer Science</p>
+                <p><b>GPA : </b> 3.8</p>
+    </div>
+
+    <div id="content2">
+        <b>Bachelors</b>
+            <p><b>University : </b> Presidency University, Bangalore</p>
+            <p><b>Major : </b> Computer Science and Engineering</p>
+            <p><b>CGPA : </b> 8.62</p>
+    </div>
+
+    <div id="content3">
+        <b>Intermediate</b>
+        <p><b>College : </b> Sri Chaitanya Junior College</p>
+        <p><b>Major : </b> MPC</p>
+        <p><b>Percent : </b> 96%</p>
+    </div>
+
+    <div id="sidebar3">
+        <h2>Experience</h2>
+    </div>
+    <div id="content4">
+        <b>Employer1</b>
+                    <p><b>Company : </b> Maybank</p>
+                    <p><b>Title : </b> Product Engineer</p>
+                    <p><b>Location : </b> Bangalore,India</p>
+                    <p><b>Technologies : </b> Oracle SQL,R Programming</p>
+    </div>
+    <div id="Content5">
+        <b>Employer2</b>
+        <p><b>Company : </b> Digipix Technologies</p>
+        <p><b>Title : </b> Intern-Web Developer</p>
+        <p><b>Location : </b> Bangalore,India</p>
+        <p><b>Technologies : </b> HTML,CSS,JAVA SCRIPT,PHP,MONGODB</p>
+        </div>
+        <div id="Content6">
+            <b>Employer3</b>
+            <p><b>Company : </b> Mphasis</p>
+            <p><b>Title : </b> Associate Software Engineer</p>
+            <p><b>Location : </b> Hyderabad,India</p>
+            <p><b>Technologies : </b> C# .Net</p>
+            </div>
+
+            <div id="sidebar4">
+                <h2>Projects</h2>
+            </div>
+           
+            <div id="Content7">
+                <b>Project1</b>
+                <p> <b>Title:</b>Smart Agriculture</p>
+            <ul>
+                <li>
+                    <b>Tools : </b>
+                    <ol type="1">
+                         <li>Node Mcu ESP8266</li>
+                         <li>WIFI-Module</li>
+                         <li>1CH Relay</li>
+                         <li>DHT 11 Temperature and Soil Sensor.</li>
+                    </ol>
+                </li>
+                <li><b>Description : </b>
+                Smartagricultureusing IOT is powered by Arduino,itconsists of Temperature sensor,Soil Moisture sensor. It detects the live weather conditions,waterlevel.It sends SMS alerts on the phone.If the water level goes down it automatically starts the pump.</li>
+            </ul> 
+                </div>
+                <div id="Content8">
+                    <b>Project1</b>
+                    <p> <b>Title:</b>Smart Agriculture</p>
+                <ul>
+                    <li>
+                        <b>Tools : </b>
+                        <ol type="1">
+                             <li>Node Mcu ESP8266</li>
+                             <li>WIFI-Module</li>
+                             <li>1CH Relay</li>
+                             <li>DHT 11 Temperature and Soil Sensor.</li>
+                        </ol>
+                    </li>
+                    <li><b>Description : </b>
+                    Smartagricultureusing IOT is powered by Arduino,itconsists of Temperature sensor,Soil Moisture sensor. It detects the live weather conditions,waterlevel.It sends SMS alerts on the phone.If the water level goes down it automatically starts the pump.</li>
+                </ul> 
+                    </div>
+
+                    <div id="Content9">
+                        <b>Project1</b>
+                        <p> <b>Title:</b>Smart Agriculture</p>
+                    <ul>
+                        <li>
+                            <b>Tools : </b>
+                            <ol type="1">
+                                 <li>Node Mcu ESP8266</li>
+                                 <li>WIFI-Module</li>
+                                 <li>1CH Relay</li>
+                                 <li>DHT 11 Temperature and Soil Sensor.</li>
+                            </ol>
+                        </li>
+                        <li><b>Description : </b>
+                        Smartagricultureusing IOT is powered by Arduino,itconsists of Temperature sensor,Soil Moisture sensor. It detects the live weather conditions,waterlevel.It sends SMS alerts on the phone.If the water level goes down it automatically starts the pump.</li>
+                    </ul> 
+                        </div>
+                        <div id="sidebar5">
+                            <h2>Blogs</h2>
+                        </div>
+                        <div id="content10">
+                            
+                            <ul style="list-style-type:square;">
+                                <li><a href="https://www.squarespace.com/websites/create-a-blog">https://www.squarespace.com/websites/create-a-blog</a></li>
+                                <li><a href="https://www.topuniversities.com/blog/10-best-student-blogs-millennial-life">https://www.topuniversities.com/blog/10-best-student-blogs-millennial-life</a></li>
+                                <li><a href="https://www.pennypolly.com/blogging/blog-examples-for-students">https://www.pennypolly.com/blogging/blog-examples-for-students</a></li>
+                                <li><a href="https://building21.org/blog/">https://building21.org/blog/</a></li>
+                            
+                            </ul>
+                            
+                            
+                        </div>
+                        <div id="sidebar6">
+                            <h2>Social Media</h2>
+                        </div>
+                        <footer>
+                            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Ftiger%2F&psig=AOvVaw34CesM0h3dxRUFL109AsZK&ust=1714002111407000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjH28nB2YUDFQAAAAAdAAAAABAE"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="google"></a>
+                            <a href="https://www.linkedin.com/feed//"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Wb7G67EcR44qT3KQLlLzI1Fna_L2lPXfTI1sx8_z2w&s" alt="linkedin"></a>
+                            <a href="https://twitter.com/i/flow/login"><img src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b" alt="Twitter"></a>
+                            <a href="https://github.com/"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Github"></a>
+                            <a href="https://resilient-melba-ace322.netlify.app/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaULOojpFkc_SSBq1q1f7PcgTMYaxyKgtcHAYsde_K7g&s" alt="Netlify"></a>
+                        </footer>
+                        </div>
+</div>
+</body>
+</html>
